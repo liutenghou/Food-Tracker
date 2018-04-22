@@ -14,6 +14,8 @@
 		9E36D0261F1D799400B93589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E36D0241F1D799400B93589 /* LaunchScreen.storyboard */; };
 		9E36D0311F1D799400B93589 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E36D0301F1D799400B93589 /* FoodTrackerTests.swift */; };
 		A47D588D1FBEBE2E009C5E47 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D588C1FBEBE2E009C5E47 /* RatingControl.swift */; };
+		BC0B6CB0208D345A00622069 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0B6CAE208D345A00622069 /* MealTableViewCell.swift */; };
+		BC0B6CB1208D345A00622069 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0B6CAF208D345A00622069 /* MealTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		9E36D0321F1D799400B93589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A47D58881FBEBD96009C5E47 /* FoodTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodTracker-Bridging-Header.h"; sourceTree = "<group>"; };
 		A47D588C1FBEBE2E009C5E47 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		BC0B6CAE208D345A00622069 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		BC0B6CAF208D345A00622069 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				9E36D0241F1D799400B93589 /* LaunchScreen.storyboard */,
 				9E36D0271F1D799400B93589 /* Info.plist */,
 				A47D58881FBEBD96009C5E47 /* FoodTracker-Bridging-Header.h */,
+				BC0B6CAE208D345A00622069 /* MealTableViewCell.swift */,
+				BC0B6CAF208D345A00622069 /* MealTableViewCell.xib */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0B6CB1208D345A00622069 /* MealTableViewCell.xib in Resources */,
 				9E36D0261F1D799400B93589 /* LaunchScreen.storyboard in Resources */,
 				9E36D0231F1D799400B93589 /* Assets.xcassets in Resources */,
 				9E36D0211F1D799400B93589 /* Main.storyboard in Resources */,
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0B6CB0208D345A00622069 /* MealTableViewCell.swift in Sources */,
 				9E36D01E1F1D799400B93589 /* ViewController.swift in Sources */,
 				A47D588D1FBEBE2E009C5E47 /* RatingControl.swift in Sources */,
 				9E36D01C1F1D799400B93589 /* AppDelegate.swift in Sources */,
