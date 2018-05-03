@@ -33,4 +33,10 @@ class FoodTrackerTests: XCTestCase {
         }
     }
     
+    //MARK: Meal Class Tests
+    func testMealInitializationSucceeds(){
+        let zeroRatingMeal = Meal.init(name:"Zero", photo:nil, rating:0);
+        XCTAssertNotNil(zeroRatingMeal);
+    }
+    
 }

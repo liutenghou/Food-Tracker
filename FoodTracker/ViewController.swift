@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-
-
+//ViewController implements these "Protocols"
 class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
@@ -46,6 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         mealNameLabel.text = "Default Text";
     }
+    //when image is tapped
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         //hide the keyboard
         nameTextField.resignFirstResponder();
@@ -58,6 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
     }
     
+    //let's users select the image after imagePicker is presented
     //MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         //dismiss the picker if the user cancels it
