@@ -54,6 +54,10 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     //MARK: Navigation
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
@@ -69,7 +73,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         let rating = ratingControl.rating
         
         meal = Meal(name: name, photo: photo, rating: rating)
-        
     }
 
     //MARK: Actions
