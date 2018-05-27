@@ -113,14 +113,16 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     //let's users select the image after imagePicker is presented
-    //MARK: UIImagePickerControllerDelegate
+    //MARK: UIImagePickerControllerDelegate methods
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         //dismiss the picker if the user cancels it
         dismiss(animated: true, completion: nil);
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         // The info dictionary may contain multiple representations of the image. You want to use the original.
-        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+            else {
             fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
         }
         photoImageView.image = selectedImage;

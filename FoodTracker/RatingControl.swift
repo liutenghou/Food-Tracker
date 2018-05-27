@@ -5,6 +5,7 @@
 //  Created by Liu Teng Hou on 11/16/17.
 //  Copyright © 2017 Blue Anchor. All rights reserved.
 //
+// custom class to control star ratings
 
 import UIKit
 
@@ -30,18 +31,17 @@ import UIKit
     
     
     //MARK: initialization
-    override init(frame: CGRect) {
+    override init(frame: CGRect) { //programatic
         super.init(frame:frame);
         setupButtons();
     }
     
-    required init(coder: NSCoder){
+    required init(coder: NSCoder){ //IB
         super.init(coder:coder);
         setupButtons();
     }
     //MARK: private methods
     private func setupButtons(){
-        
         //clear existing buttons
         for button in ratingButtons{
             removeArrangedSubview(button);
@@ -82,7 +82,6 @@ import UIKit
         }
         
         updateButtonSelectionStates();
-        
     }
     
     //MARK: button action
@@ -129,7 +128,6 @@ import UIKit
             //assign hint and value strings
             button.accessibilityHint = hintString;
             button.accessibilityValue = valueString;
-            
         }
     }
 }
